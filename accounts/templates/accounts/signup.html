@@ -6,53 +6,34 @@
 {% if error %}
 {{ error }}
 {% endif %}
-<link rel="stylesheet" type="text/css" href="../../../goodies/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../../../goodies/fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../../../goodies/vendor/animate/animate.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../../../goodies/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../../../goodies/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../../../goodies/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../../../goodies/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="../../../goodies/css/util.css">
-<link rel="stylesheet" type="text/css" href="../../../goodies/css/main.css">
 
-<div class="limiter">
   <div class="container">
-    <div class=" p-l-110 p-r-110 p-t-62 p-b-33">
-      <form method="post" action="{% url 'signup' %}" class=" validate-form flex-sb flex-w">
+      <form method="post" action="{% url 'signup' %}" >
         {% csrf_token %}
-        <span class="login100-form-title p-b-53">
           Sign In With
-        </span>
 
-        <a href="#" class="btn-face m-b-20">
+
+        <a href="#" class="btn-face">
           <i class="fa fa-facebook-official"></i>
           Facebook
         </a>
 
-        <a href="#" class="btn-google m-b-20">
-          <img src="images/icons/icon-google.png" alt="GOOGLE">
+        <a href="#" class="btn-google">
+          <img src="" alt="GOOGLE">
           Google
         </a>
 
-        <div class="p-t-31 p-b-9">
+        <div class="pt-31 p-b-9">
           <span class="txt1">
             Username
           </span>
         </div>
-        <div class="wrap-input100 validate-input" data-validate = "Username is required">
-          <input class="input100" type="text" name="username" >
-          <span class="focus-input100"></span>
+        <div class="wrap">
+          <input type="text" name="username" >
+          <span class="focus"></span>
         </div>
 
-        <div class="p-t-13 p-b-9">
+        <div class="pt-13 pb-9">
           <span class="txt1">
             Password
           </span>
@@ -60,11 +41,11 @@
 
         </div>
 
-        <div class="wrap-input100 validate-input" data-validate = "Password is required">
-          <input class="input100" type="password" name="pass1" >
-          <span class="focus-input100"></span>
+        <div class="wrap">
+          <input  type="password" name="password1" >
+          <span class="focus"></span>
         </div>
-        <div class="p-t-13 p-b-9">
+        <div>
           <span class="txt1">
             Confirm Password
           </span>
@@ -72,37 +53,18 @@
 
         </div>
 
-        <div class="wrap-input100 validate-input" data-validate = "Password is required">
-          <input class="input100" type="password" name="pass2" >
-          <span class="focus-input100"></span>
+        <div class="wrap">
+          <input  type="password" name="password2" >
+          <span class="focus"></span>
         </div>
 
-        <div class="container-login100-form-btn m-t-17">
+        <div class="container">
           <button type="submit" class="btn btn-primary">
             Sign Up
           </button>
         </div>
     </div>
-  </div>
-</div>
 
 
-<div id="dropDownSelect1"></div>
 
-<!--===============================================================================================-->
-<script src="../../../goodies/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-<script src="../../../goodies/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-<script src="../../../goodies/vendor/bootstrap/js/popper.js"></script>
-<script src="../../../goodies/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-<script src="../../../goodies/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-<script src="../../../goodies/vendor/daterangepicker/moment.min.js"></script>
-<script src="../../../goodies/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-<script src="../../../goodies/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-<script src="../../../goodies/js/main.js"></script>
 {% endblock %}
